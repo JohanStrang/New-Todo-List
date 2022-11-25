@@ -1,0 +1,114 @@
+html, body {
+    width: 90%;
+    margin: 0 auto;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+
+.container {
+  min-width: 700px;
+  display: flex;
+  flex-direction: column;
+  padding:20px;
+}
+
+/* Formattering input-ruta samt även lägga till knappen + tecken */
+.todo-form {
+  margin: 20px 0px;  
+}
+
+.addToDo {
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  vertical-align: middle;
+  font-size: 1.5rem;
+}
+
+.addToDo:hover {
+  background-color: #bbb;
+}
+
+.todo-input {
+    width: 260px;
+    height: 46px;
+    border: 1px solid black;
+    outline: none;
+    font-size: 1rem;
+    vertical-align: middle;
+}
+
+.todo-input:hover {
+    background-color: #bbb;
+  }
+
+/* Sortera knapparna container*/
+.sort-btn {
+  margin-bottom: 20px;
+}
+
+.btn{
+  padding: 5px 10px;
+  font-size: 0.8rem;
+}
+
+.delbtn{
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  margin-left: 10px;
+}
+
+.btn .delbtn:hover {
+  background-color: #bbb;
+}
+
+.markedbtn {
+  border-color: red;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+}
+
+
+/* Formattering av ToDo listan med ram runt etc */
+.item { 
+    width: 300px;
+    vertical-align: middle;
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+    list-style-type: none;
+    font-size: 1rem;
+    border: 1px solid black;
+    word-break: break-all;
+  }
+
+.todo-items {
+    margin: 0;
+    padding: 0;
+  }
+  
+/* Färg när hover */
+.todo-items li:hover {
+    background: #ddd;
+  }
+
+
+/* När Klar bakgrund och genomstruket*/
+.done {
+    text-decoration: line-through;
+    background: darkgrey ;
+  }
+
+/* Klar knapp för att markera klar */
+.klarbtn {
+    float: right;
+    margin: 0 5px 0 0;
+    color: rgb(174,0,0);
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+  
+  .klarbtn:hover {
+    background-color: red;
+    color: white;
+  }
